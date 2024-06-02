@@ -11,11 +11,11 @@ const  App = () => {
   return (
     <div className="App relative">
       <Router>
-        <div className="flex gap-9 bg-e8f2fc h-100 overflow-hidden ">
-          <div className="w-side">
+        <div className="flex bg-e8f2fc h-100 overflow-hidden ">
+          <div className="w-side sm-hidden">
             <Sidebar />
           </div>
-          <div className="w-route">
+          <div className="w-route mlpx9 sm-mlpx1">
             <Header />
             <Routes>
               <Route path="/" element={<Login />} />
