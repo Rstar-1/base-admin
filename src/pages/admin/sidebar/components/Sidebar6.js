@@ -3,58 +3,7 @@ import { NavLink } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
 import logo from "../../../../assets/logo.png";
 
-const Sidebar1 = () => {
-  // const sidebarmenu = [
-  //   {
-  //     icon: "grid",
-  //     name: "Dashboard",
-  //     route: "dashboard",
-  //     accordian: "accordion-1",
-  //     tabId: "cb1",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "folder",
-  //     name: "Portfolio",
-  //     route: "",
-  //     accordian: "accordion-2",
-  //     tabId: "cb2",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "settings",
-  //     name: "Services",
-  //     route: "sections",
-  //     accordian: "accordion-3",
-  //     tabId: "cb3",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "file",
-  //     name: "CMS",
-  //     route: "blogs",
-  //     accordian: "accordion-4",
-  //     tabId: "cb4",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "book",
-  //     name: "Billing",
-  //     route: "elearning",
-  //     accordian: "accordion-6",
-  //     tabId: "cb6",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "search",
-  //     name: "Seo",
-  //     route: "ecom",
-  //     accordian: "accordion-5",
-  //     tabId: "cb5",
-  //     dropdown: [],
-  //   },
-  // ];
-
+const Sidebar6 = () => {
   const sidebarmenu = [
     {
       icon: "grid",
@@ -65,107 +14,158 @@ const Sidebar1 = () => {
       dropdown: [],
     },
     {
-      icon: "user",
-      name: "Pages",
+      icon: "folder",
+      name: "Portfolio",
       route: "",
       accordian: "accordion-2",
       tabId: "cb2",
-      dropdown: [
-        {
-          icon: "user",
-          name: "About Us",
-          route: "AboutUs",
-        },
-        {
-          icon: "grid",
-          name: "Services",
-          route: "Services",
-        },
-        {
-          icon: "plus",
-          name: "Teams",
-          route: "Teams",
-        },
-        {
-          icon: "edit",
-          name: "Gallery",
-          route: "Gallery",
-        },
-        {
-          icon: "grid",
-          name: "Connect Us",
-          route: "ConnectUs",
-        },
-      ],
+      dropdown: [],
     },
     {
       icon: "settings",
-      name: "Sections",
+      name: "Services",
       route: "sections",
       accordian: "accordion-3",
       tabId: "cb3",
-      dropdown: [
-        {
-          icon: "user",
-          name: "About Us",
-          route: "AboutUs",
-        },
-        {
-          icon: "grid",
-          name: "Services",
-          route: "Services",
-        },
-        {
-          icon: "plus",
-          name: "Teams",
-          route: "Teams",
-        },
-      ],
+      dropdown: [],
     },
     {
-      icon: "folder",
-      name: "Blogs",
+      icon: "file",
+      name: "CMS",
       route: "blogs",
       accordian: "accordion-4",
       tabId: "cb4",
       dropdown: [],
     },
     {
-      icon: "grid",
-      name: "Ecom",
-      route: "ecom",
-      accordian: "accordion-5",
-      tabId: "cb5",
-      dropdown: [],
-    },
-    {
-      icon: "phone-call",
-      name: "Elearning",
+      icon: "book",
+      name: "Billing",
       route: "elearning",
       accordian: "accordion-6",
       tabId: "cb6",
       dropdown: [],
     },
     {
-      icon: "grid",
-      name: "Ecom",
+      icon: "search",
+      name: "Seo",
       route: "ecom",
       accordian: "accordion-5",
       tabId: "cb5",
-      dropdown: [],
-    },
-    {
-      icon: "phone-call",
-      name: "Elearning",
-      route: "elearning",
-      accordian: "accordion-6",
-      tabId: "cb6",
       dropdown: [],
     },
   ];
 
+  // const sidebarmenu = [
+  //   {
+  //     icon: "grid",
+  //     name: "Dashboard",
+  //     route: "dashboard",
+  //     accordian: "accordion-1",
+  //     tabId: "cb1",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "user",
+  //     name: "Pages",
+  //     route: "",
+  //     accordian: "accordion-2",
+  //     tabId: "cb2",
+  //     dropdown: [
+  //       {
+  //         icon: "user",
+  //         name: "About Us",
+  //         route: "AboutUs",
+  //       },
+  //       {
+  //         icon: "grid",
+  //         name: "Services",
+  //         route: "Services",
+  //       },
+  //       {
+  //         icon: "plus",
+  //         name: "Teams",
+  //         route: "Teams",
+  //       },
+  //       {
+  //         icon: "edit",
+  //         name: "Gallery",
+  //         route: "Gallery",
+  //       },
+  //       {
+  //         icon: "grid",
+  //         name: "Connect Us",
+  //         route: "ConnectUs",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     icon: "settings",
+  //     name: "Sections",
+  //     route: "sections",
+  //     accordian: "accordion-3",
+  //     tabId: "cb3",
+  //     dropdown: [
+  //       {
+  //         icon: "user",
+  //         name: "About Us",
+  //         route: "AboutUs",
+  //       },
+  //       {
+  //         icon: "grid",
+  //         name: "Services",
+  //         route: "Services",
+  //       },
+  //       {
+  //         icon: "plus",
+  //         name: "Teams",
+  //         route: "Teams",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     icon: "folder",
+  //     name: "Blogs",
+  //     route: "blogs",
+  //     accordian: "accordion-4",
+  //     tabId: "cb4",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "grid",
+  //     name: "Ecom",
+  //     route: "ecom",
+  //     accordian: "accordion-5",
+  //     tabId: "cb5",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "phone-call",
+  //     name: "Elearning",
+  //     route: "elearning",
+  //     accordian: "accordion-6",
+  //     tabId: "cb6",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "grid",
+  //     name: "Ecom",
+  //     route: "ecom",
+  //     accordian: "accordion-5",
+  //     tabId: "cb5",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "phone-call",
+  //     name: "Elearning",
+  //     route: "elearning",
+  //     accordian: "accordion-6",
+  //     tabId: "cb6",
+  //     dropdown: [],
+  //   },
+  // ];
+
   return (
-    <div className="bgwhite h-100 overflow-auto relative sidebar1">
+    <div className="bgwhite h-100 overflow-auto relative sidebar6">
       <div className="">
         <div className="flex justify-center py5">
           <img src={logo} alt="logo" className="sidebar-logo object-contain" />
@@ -186,7 +186,7 @@ const Sidebar1 = () => {
                           />
                           <label
                             for={e.tabId}
-                            className="py10 px15 bg-fa cursor-pointer flex justify-between items-center textforth font-300"
+                            className="py10 px15 cursor-pointer flex justify-between items-center textforth font-300"
                           >
                             <div className="flex items-center gap-4">
                               <FeatherIcon
@@ -206,11 +206,11 @@ const Sidebar1 = () => {
                             </div>
                           </label>
                           <div class="tab__content">
-                            <div className="grid grid-cols-1 px8">
+                            <div className="grid grid-cols-1 plpx10">
                               {e.dropdown.map((drop) => (
                                 <NavLink
                                   activeClassName="active"
-                                  className="flex items-center activesidebar py7 gap-9"
+                                  className="flex items-center activesidebar px10 py7 gap-9"
                                   to={drop.route}
                                 >
                                   <FeatherIcon
@@ -235,12 +235,14 @@ const Sidebar1 = () => {
                         className="flex items-center activesidebar px15 py8 gap-9"
                         to={e.route}
                       >
-                          <FeatherIcon
-                            icon={e.icon}
-                            className="cursor-pointer"
-                            size={15}
-                          />
-                        <p className="fsize13 mtpx2 font-300">{e.name}</p>
+                        <FeatherIcon
+                          icon={e.icon}
+                          className="cursor-pointer flex"
+                          size={16}
+                        />
+                        <p className="fsize13 text-side mtpx2 font-300">
+                          {e.name}
+                        </p>
                       </NavLink>
                     </>
                   )}
@@ -254,4 +256,4 @@ const Sidebar1 = () => {
   );
 };
 
-export default Sidebar1;
+export default Sidebar6;

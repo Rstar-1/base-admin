@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import FeatherIcon from "feather-icons-react";
 import logo from "../../../../assets/logo.png";
 
-const Sidebar1 = () => {
+const Sidebar4 = () => {
   // const sidebarmenu = [
   //   {
   //     icon: "grid",
@@ -165,13 +165,13 @@ const Sidebar1 = () => {
   ];
 
   return (
-    <div className="bgwhite h-100 overflow-auto relative sidebar1">
+    <div className="bgwhite h-100 overflow-auto relative sidebar4">
       <div className="">
         <div className="flex justify-center py5">
           <img src={logo} alt="logo" className="sidebar-logo object-contain" />
         </div>
         <div className="pbpx10">
-          <div className="grid grid-cols-1">
+          <div className="grid grid-cols-1 px10">
             {sidebarmenu.map((e) => (
               <>
                 <div className="">
@@ -186,7 +186,7 @@ const Sidebar1 = () => {
                           />
                           <label
                             for={e.tabId}
-                            className="py10 px15 bg-fa cursor-pointer flex justify-between items-center textforth font-300"
+                            className="py10 px12 cursor-pointer flex justify-between items-center textforth font-300"
                           >
                             <div className="flex items-center gap-4">
                               <FeatherIcon
@@ -206,11 +206,11 @@ const Sidebar1 = () => {
                             </div>
                           </label>
                           <div class="tab__content">
-                            <div className="grid grid-cols-1 px8">
+                            <div className="grid grid-cols-1 prpx15 plpx10">
                               {e.dropdown.map((drop) => (
                                 <NavLink
                                   activeClassName="active"
-                                  className="flex items-center activesidebar py7 gap-9"
+                                  className="flex items-center activesidebar py7 px10 rounded-5 gap-9"
                                   to={drop.route}
                                 >
                                   <FeatherIcon
@@ -232,15 +232,17 @@ const Sidebar1 = () => {
                     <>
                       <NavLink
                         activeClassName="active"
-                        className="flex items-center activesidebar px15 py8 gap-9"
+                        className="flex items-center rounded-10 activesidebar px12 py8 gap-9"
                         to={e.route}
                       >
-                          <FeatherIcon
-                            icon={e.icon}
-                            className="cursor-pointer"
-                            size={15}
-                          />
-                        <p className="fsize13 mtpx2 font-300">{e.name}</p>
+                        <FeatherIcon
+                          icon={e.icon}
+                          className="cursor-pointer flex"
+                          size={16}
+                        />
+                        <p className="fsize13 text-side mtpx2 font-300">
+                          {e.name}
+                        </p>
                       </NavLink>
                     </>
                   )}
@@ -254,4 +256,4 @@ const Sidebar1 = () => {
   );
 };
 
-export default Sidebar1;
+export default Sidebar4;

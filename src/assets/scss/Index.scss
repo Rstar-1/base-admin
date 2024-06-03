@@ -47,7 +47,7 @@ $gray: gray !important;
   background: $dark;
 }
 .bg-light-primary {
-  background: #f3f2f7 !important;
+  background: #efeeef4b !important;
 }
 .bg-light-secondary {
   background: #faf1f1 !important;
@@ -557,23 +557,87 @@ p {
 
 /* ======================= Start-Sidebar ======================= */
 .sidebar-logo {
-  width: 90px !important;
-  height: 100% !important;
-}
-.activesidebar {
-  color: gray;
-}
-.active {
-  color: $primary;
+  width: 100px !important;
+  height: 100px !important;
 }
 .dot-dash {
   width: 20px !important;
   height: 20px !important;
 }
-.sidebar-img {
-  width: 120px !important;
-  height: 120px !important;
+
+// Section 1
+.sidebar1 .activesidebar {
+  color: $gray;
 }
+.sidebar1 .active {
+  color: $primary;
+}
+// Section 1
+
+// Section 2
+.sidebar2 .activesidebar .icon-circle {
+  color: $primary;
+  background: #efeeef4b !important;
+}
+.sidebar2 .active .icon-circle {
+  color: $white;
+  background: $primary;
+}
+.sidebar2 .activesidebar .text-side {
+  color: $gray;
+}
+.sidebar2 .active .text-side {
+  color: $primary;
+}
+.icon-circle{
+  width: 24px !important;
+  height: 24px !important;
+}
+// Section 2
+
+// Section 3
+.sidebar3 .activesidebar {
+  color: $gray;
+}
+.sidebar3 .active {
+  color: $white;
+  background: $primary;
+}
+// Section 3
+
+// Section 4
+.sidebar4 .activesidebar {
+  color: $gray;
+}
+.sidebar4 .active {
+  color: $white;
+  background: $primary;
+}
+// Section 4
+
+// Section 5
+.sidebar5 .activesidebar {
+  color: $gray;
+}
+.sidebar5 .active {
+  color: $primary;
+  border-left: 4px solid $primary;
+  background: #efeeef4b !important;
+}
+// Section 5
+
+// Section 6
+.sidebar6 .activesidebar {
+  color: $gray;
+}
+.sidebar6 .active {
+  color: $primary;
+  border-left: 4px solid $primary;
+  border-radius: 8px 0px 0px 8px !important;
+  background: #efeeef4b !important;
+}
+// Section 6
+
 /* ======================= End-Sidebar ======================= */
 
 /* ======================= Start-Header ======================= */
