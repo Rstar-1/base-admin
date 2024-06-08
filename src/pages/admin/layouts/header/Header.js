@@ -1,9 +1,9 @@
 import React from "react";
-import Header1 from "./components/Header1";
+import Headers from "./components/Header2";
 
 const Header = () => {
   return (
-    <Header1 />
+    <Headers />
   );
 };
 

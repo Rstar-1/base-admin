@@ -1,12 +1,12 @@
 import React from 'react'
-import Sidebar1 from './components/Sidebar1'
+import Sidebars from './components/Sidebar4'
 
 const Sidebar = () => {
   return (
     <div>
-      <Sidebar1 />
+      <Sidebars />
     </div>
   )
 }
 
-export default Sidebar
+export default Sidebar;

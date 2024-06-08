@@ -4,57 +4,6 @@ import FeatherIcon from "feather-icons-react";
 import logo from "../../../../assets/logo.png";
 
 const Sidebar6 = () => {
-  // const sidebarmenu = [
-  //   {
-  //     icon: "grid",
-  //     name: "Dashboard",
-  //     route: "dashboard",
-  //     accordian: "accordion-1",
-  //     tabId: "cb1",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "folder",
-  //     name: "Portfolio",
-  //     route: "",
-  //     accordian: "accordion-2",
-  //     tabId: "cb2",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "settings",
-  //     name: "Services",
-  //     route: "sections",
-  //     accordian: "accordion-3",
-  //     tabId: "cb3",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "file",
-  //     name: "CMS",
-  //     route: "blogs",
-  //     accordian: "accordion-4",
-  //     tabId: "cb4",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "book",
-  //     name: "Billing",
-  //     route: "elearning",
-  //     accordian: "accordion-6",
-  //     tabId: "cb6",
-  //     dropdown: [],
-  //   },
-  //   {
-  //     icon: "search",
-  //     name: "Seo",
-  //     route: "ecom",
-  //     accordian: "accordion-5",
-  //     tabId: "cb5",
-  //     dropdown: [],
-  //   },
-  // ];
-
   const sidebarmenu = [
     {
       icon: "grid",
@@ -65,104 +14,155 @@ const Sidebar6 = () => {
       dropdown: [],
     },
     {
-      icon: "user",
-      name: "Pages",
+      icon: "folder",
+      name: "Portfolio",
       route: "",
       accordian: "accordion-2",
       tabId: "cb2",
-      dropdown: [
-        {
-          icon: "user",
-          name: "About Us",
-          route: "AboutUs",
-        },
-        {
-          icon: "grid",
-          name: "Services",
-          route: "Services",
-        },
-        {
-          icon: "plus",
-          name: "Teams",
-          route: "Teams",
-        },
-        {
-          icon: "edit",
-          name: "Gallery",
-          route: "Gallery",
-        },
-        {
-          icon: "grid",
-          name: "Connect Us",
-          route: "ConnectUs",
-        },
-      ],
+      dropdown: [],
     },
     {
       icon: "settings",
-      name: "Sections",
+      name: "Services",
       route: "sections",
       accordian: "accordion-3",
       tabId: "cb3",
-      dropdown: [
-        {
-          icon: "user",
-          name: "About Us",
-          route: "AboutUs",
-        },
-        {
-          icon: "grid",
-          name: "Services",
-          route: "Services",
-        },
-        {
-          icon: "plus",
-          name: "Teams",
-          route: "Teams",
-        },
-      ],
+      dropdown: [],
     },
     {
-      icon: "folder",
-      name: "Blogs",
+      icon: "file",
+      name: "CMS",
       route: "blogs",
       accordian: "accordion-4",
       tabId: "cb4",
       dropdown: [],
     },
     {
-      icon: "grid",
-      name: "Ecom",
-      route: "ecom",
-      accordian: "accordion-5",
-      tabId: "cb5",
-      dropdown: [],
-    },
-    {
-      icon: "phone-call",
-      name: "Elearning",
+      icon: "book",
+      name: "Billing",
       route: "elearning",
       accordian: "accordion-6",
       tabId: "cb6",
       dropdown: [],
     },
     {
-      icon: "grid",
-      name: "Ecom",
+      icon: "search",
+      name: "Seo",
       route: "ecom",
       accordian: "accordion-5",
       tabId: "cb5",
-      dropdown: [],
-    },
-    {
-      icon: "phone-call",
-      name: "Elearning",
-      route: "elearning",
-      accordian: "accordion-6",
-      tabId: "cb6",
       dropdown: [],
     },
   ];
+
+  // const sidebarmenu = [
+  //   {
+  //     icon: "grid",
+  //     name: "Dashboard",
+  //     route: "dashboard",
+  //     accordian: "accordion-1",
+  //     tabId: "cb1",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "user",
+  //     name: "Pages",
+  //     route: "",
+  //     accordian: "accordion-2",
+  //     tabId: "cb2",
+  //     dropdown: [
+  //       {
+  //         icon: "user",
+  //         name: "About Us",
+  //         route: "AboutUs",
+  //       },
+  //       {
+  //         icon: "grid",
+  //         name: "Services",
+  //         route: "Services",
+  //       },
+  //       {
+  //         icon: "plus",
+  //         name: "Teams",
+  //         route: "Teams",
+  //       },
+  //       {
+  //         icon: "edit",
+  //         name: "Gallery",
+  //         route: "Gallery",
+  //       },
+  //       {
+  //         icon: "grid",
+  //         name: "Connect Us",
+  //         route: "ConnectUs",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     icon: "settings",
+  //     name: "Sections",
+  //     route: "sections",
+  //     accordian: "accordion-3",
+  //     tabId: "cb3",
+  //     dropdown: [
+  //       {
+  //         icon: "user",
+  //         name: "About Us",
+  //         route: "AboutUs",
+  //       },
+  //       {
+  //         icon: "grid",
+  //         name: "Services",
+  //         route: "Services",
+  //       },
+  //       {
+  //         icon: "plus",
+  //         name: "Teams",
+  //         route: "Teams",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     icon: "folder",
+  //     name: "Blogs",
+  //     route: "blogs",
+  //     accordian: "accordion-4",
+  //     tabId: "cb4",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "grid",
+  //     name: "Ecom",
+  //     route: "ecom",
+  //     accordian: "accordion-5",
+  //     tabId: "cb5",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "phone-call",
+  //     name: "Elearning",
+  //     route: "elearning",
+  //     accordian: "accordion-6",
+  //     tabId: "cb6",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "grid",
+  //     name: "Ecom",
+  //     route: "ecom",
+  //     accordian: "accordion-5",
+  //     tabId: "cb5",
+  //     dropdown: [],
+  //   },
+  //   {
+  //     icon: "phone-call",
+  //     name: "Elearning",
+  //     route: "elearning",
+  //     accordian: "accordion-6",
+  //     tabId: "cb6",
+  //     dropdown: [],
+  //   },
+  // ];
   
   return (
     <div className="bgwhite h-100 overflow-auto relative sidebar6">
