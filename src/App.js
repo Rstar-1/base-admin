@@ -1,11 +1,16 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import Error from "./pages/error/Error";
+// Components
 import Sidebar from "./pages/admin/sidebar/Sidebar";
 import Header from "./pages/admin/layouts/header/Header";
-import Dashboard from "./pages/admin/layouts/components/dashboard/Dashboard";
+// Auth Pages
 import Login from "./pages/login/Login";
 import Register from "./pages/login/Register";
+// Other pages
 import Coming from "./pages/admin/layouts/components/coming/Coming";
+import Error from "./pages/error/Error";
+// Pages
+import Dashboard from "./pages/admin/layouts/components/dashboard/Dashboard";
+import Seo from "./pages/admin/layouts/components/seo/Seo";
 
 const  App = () => {
   return (
@@ -25,6 +30,7 @@ const  App = () => {
               {/* ======================= Start-Login ======================= */}
               {/* ======================= Start-Pages ======================= */}
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/seo" element={<Seo />} />
               {/* ======================= End-Pages ======================= */}
               {/* ======================= Start-Error ======================= */}
               <Route path="*" element={<Error />} />
