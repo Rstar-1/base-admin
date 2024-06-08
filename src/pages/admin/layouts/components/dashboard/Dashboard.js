@@ -8,7 +8,7 @@ import RadialSeparators from "./components/RadialSeparators";
 
 const Dashboard = () => {
   return (
-    <div className="mtpx9 prpx10 sm-prpx5 sm-plpx5 dash-scroll dashboard">
+    <div className="mtpx9 sm-prpx5 sm-plpx5 dash-scroll dashboard">
       <div className="flex sm-block gap-12 mbpx10">
         <div className="w-40 sm-w-full">
           <div className="grid grid-cols-1 gap-2">

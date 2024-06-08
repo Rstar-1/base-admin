@@ -236,7 +236,8 @@ input,
     font-size: 13px !important;
   }
 }
-.css-b62m3t-container,text.CircularProgressbar-text {
+.css-b62m3t-container,
+text.CircularProgressbar-text {
   font-family: "poppins-regular" !important;
   font-size: 14px !important;
 }
@@ -536,7 +537,7 @@ p {
 }
 /* ======================= End-Button ======================= */
 
-/* ======================= End-Dashboard ======================= */
+/* ======================= End-Admin ======================= */
 
 // Dashboard 1
 .w-side {
@@ -544,7 +545,10 @@ p {
 }
 .w-route {
   width: 83% !important;
-  @media (max-width:640px) {
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 100% !important;
+  }
+  @media (max-width: 640px) {
     width: 100% !important;
   }
 }
@@ -553,9 +557,10 @@ p {
 // Dashboard 2
 // Dashboard 2
 
-/* ======================= End-Dashboard ======================= */
+/* ======================= End-Admin ======================= */
 
 /* ======================= Start-Sidebar ======================= */
+
 .sidebar-logo {
   width: 100px !important;
   height: 100px !important;
@@ -589,7 +594,7 @@ p {
 .sidebar2 .active .text-side {
   color: $primary;
 }
-.icon-circle{
+.icon-circle {
   width: 24px !important;
   height: 24px !important;
 }
@@ -641,13 +646,36 @@ p {
 /* ======================= End-Sidebar ======================= */
 
 /* ======================= Start-Header ======================= */
+
 .header-logo {
-  width: 40px !important;
-  height: 40px !important;
+  width: 60px !important;
+  height: 60px !important;
+  @media (max-width: 912px) {
+    width: 50px !important;
+    height: 50px !important;
+  }
 }
-.border-h {
-  border-radius: 0 0 0 10px !important;
+
+// Header 1
+.border-h1 {
+  margin-top: 8px !important;
+  border-radius: 10px !important;
+  @media (max-width: 912px) {
+    margin-top: 5px !important;
+    border-radius: 8px !important;
+  }
 }
+// Header 1
+
+// Header 2
+.border-h2 {
+  border-radius: 0px 0px 10px 10px !important;
+  @media (max-width: 912px) {
+    border-radius: 8px !important;
+  }
+}
+// Header 2
+
 /* ======================= End-Header ======================= */
 
 /* ======================= Start-Table ======================= */
@@ -729,7 +757,7 @@ tr:nth-child(even):hover {
 .gol-img {
   width: 130px !important;
   height: 130px !important;
-  @media (max-width:640px) {
+  @media (max-width: 640px) {
     width: 50px !important;
     height: 50px !important;
   }
