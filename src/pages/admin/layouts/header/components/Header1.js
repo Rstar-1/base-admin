@@ -4,7 +4,7 @@ import logo from "../../../../../assets/logo.png";
 
 const Header1 = () => {
   return (
-    <div className="bgwhite border-h1 flex justify-between items-center px16 py10 md-py6 sm-py6 md-px6 sm-px8">
+    <div className="bgwhite border-h1 flex justify-between items-center px16 py10 md-py6 sm-py6 md-px8 sm-px8">
       <div className="flex items-center gap-10">
         <img src={logo} alt="logo" className="header-logo" />
         <div>
@@ -18,22 +18,32 @@ const Header1 = () => {
       </div>
       <div className="flex gap-10 items-center">
         <FeatherIcon
-          icon="calendar"
-          className="textgray cursor-pointer"
+          icon="align-left"
+          className="textgray hidden md-block sm-block cursor-pointer"
           size={20}
         />
         <FeatherIcon
-          icon="align-left"
           className="textgray hidden md-block sm-block cursor-pointer"
-          size={24}
+          size={20}
+        />
+        <FeatherIcon
+          icon="settings"
+          className="textgray hidden md-block sm-block cursor-pointer"
+          size={20}
         />
         <FeatherIcon
           icon="log-out"
           className="textgray hidden md-hidden sm-block cursor-pointer"
           size={20}
         />
-        <button className="border-0 sm-hidden cursor-pointer font-500 textwhite rounded-5 ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 md-fsize14 plpx25 prpx25 fsize14 bgprimary">
-          Logout
+        <button className="border-0 sm-hidden cursor-pointer font-500 rounded-5 p10 bgprimary">
+          <FeatherIcon icon="user" className="textwhite flex" size={16} />
+        </button>
+        <button className="border-0 sm-hidden cursor-pointer font-500 rounded-5 p10 bgsecondary">
+          <FeatherIcon icon="settings" className="textwhite flex" size={16} />
+        </button>
+        <button className="border-0 sm-hidden cursor-pointer font-500 rounded-5 p10 bgwarning">
+          <FeatherIcon icon="log-out" className="textwhite flex" size={16} />
         </button>
       </div>
     </div>

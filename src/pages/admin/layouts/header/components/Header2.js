@@ -28,6 +28,11 @@ const Header2 = () => {
           size={24}
         />
         <FeatherIcon
+          icon="settings"
+          className="textgray hidden md-block sm-block cursor-pointer"
+          size={24}
+        />
+        <FeatherIcon
           icon="log-out"
           className="textgray hidden md-hidden sm-block cursor-pointer"
           size={20}

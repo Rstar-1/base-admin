@@ -20,7 +20,7 @@ const  App = () => {
           <div className="w-side md-hidden sm-hidden">
             <Sidebar />
           </div>
-          <div className="w-route mlpx9 md-mlpx8 sm-mlpx1 mrpx9 md-mrpx8 sm-mrpx1">
+          <div className="w-route mlpx9 md-mlpx1 sm-mlpx1 mrpx9 md-mrpx1 sm-mrpx1">
             <Header />
             <Routes>
               <Route path="/" element={<Login />} />

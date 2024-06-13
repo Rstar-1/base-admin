@@ -15,7 +15,7 @@ const Sidebar4 = () => {
     },
     {
       icon: "folder",
-      name: "Portfolio",
+      name: "Management",
       route: "",
       accordian: "accordion-2",
       tabId: "cb2",
@@ -23,7 +23,7 @@ const Sidebar4 = () => {
     },
     {
       icon: "settings",
-      name: "Services",
+      name: "Reviews",
       route: "sections",
       accordian: "accordion-3",
       tabId: "cb3",
