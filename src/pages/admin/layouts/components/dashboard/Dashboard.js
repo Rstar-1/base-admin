@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashboards from './components/Dashboard7'
+import Dashboards from './components/Dashboard6';
 
 const Dashboard = () => {
   return (
@@ -9,4 +9,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Dashboard;
