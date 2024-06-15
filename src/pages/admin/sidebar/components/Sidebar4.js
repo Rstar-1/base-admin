@@ -165,7 +165,7 @@ const Sidebar4 = () => {
   // ];
 
   return (
-    <div className="bgwhite h-100 overflow-auto relative sidebar4">
+    <div className="bgcard h-100 overflow-auto relative sidebar4">
       <div className="">
         <div className="flex justify-center py5">
           <img src={logo} alt="logo" className="sidebar-logo object-contain" />

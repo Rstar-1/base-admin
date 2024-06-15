@@ -4,9 +4,9 @@ import Connect from "./Connect";
 
 const Dashboard = () => {
   return (
-    <div className="mtpx9 bgwhite py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
+    <div className="mtpx9 bgcard py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
       <div className="grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-12">
-        <div className="dash6-h d-shadow relative">
+        <div className="dash6-h bgwhite d-shadow relative">
           <div className="p15 flex justify-between items-center">
             <div>
               <h2 className="fsize29 mtpx1 mbpx1 textprimary">1000 +</h2>
@@ -28,7 +28,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="dash6-h d-shadow relative">
+        <div className="dash6-h bgwhite d-shadow relative">
           <div className="p15 flex justify-between items-center">
             <div>
               <h2 className="fsize29 mtpx1 mbpx1 textsecondary">100 +</h2>
@@ -52,7 +52,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="dash6-h d-shadow relative">
+        <div className="dash6-h bgwhite d-shadow relative">
           <div className="p15 flex justify-between items-center">
             <div>
               <h2 className="fsize29 mtpx1 mbpx1 textwarning">12 +</h2>
@@ -76,7 +76,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="dash6-h d-shadow relative">
+        <div className="dash6-h bgwhite d-shadow relative">
           <div className="p15 flex justify-between items-center">
             <div>
               <h2 className="fsize29 mtpx1 mbpx1 textsuccess">6</h2>

@@ -5,12 +5,12 @@ import ReactPaginate from "react-paginate";
 const Connect = () => {
   return (
     <div>
-      <div className="mtpx9 cust-scroll bgwhite rounded-10 sm-rounded-none">
+      <div className="mtpx9 rounded-10 sm-rounded-none">
         <div className="mbpx10 mtpx20">
           <div className="w-60 sm-w-90">
             <div className="relative">
               <input
-                className="w-full h-input fsize14 rounded-5 plpx10 border-ec"
+                className="w-full h-input bgwhite textgray fsize14 rounded-5 plpx10 border-ec"
                 placeholder="Search"
               />
               <div className="absolute top-0 right-0 mtpx9 mrpx2">

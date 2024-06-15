@@ -4,7 +4,7 @@ import Connect from "./Connect";
 
 const Dashboard4 = () => {
   return (
-    <div className="mtpx9 bgwhite py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
+    <div className="mtpx9 bgcard py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
       <div className="grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-12">
         <div className="dash4-h rounded-5 md-mtpx10 sm-mtpx10 bgprimary flex items-center">
           <div className="p15 flex justify-between w-full items-center">

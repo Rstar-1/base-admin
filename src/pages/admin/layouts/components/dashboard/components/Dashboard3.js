@@ -3,7 +3,7 @@ import Connect from "./Connect";
 
 const Dashboard = () => {
   return (
-    <div className="mtpx9 bgwhite py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
+    <div className="mtpx9 bgcard py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
       <div className="grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-12 mtpx10 sm-mtpx1">
         <div className="dash3-h d-shadow overflow-hidden relative flex items-center bgprimary rounded-5 md-mtpx10 sm-mtpx10">
           <div className="p15">

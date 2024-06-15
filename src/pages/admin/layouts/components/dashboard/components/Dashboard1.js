@@ -4,9 +4,9 @@ import Connect from "./Connect";
 
 const Dashboard1 = () => {
   return (
-    <div className="mtpx9 bgwhite py30 sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
+    <div className="mtpx9 py30 bgcard sm-py20 px20 md-px10 sm-px10 rounded-10 cust-scroll">
       <div className="grid-cols-4 md-grid-cols-2 sm-grid-cols-1 gap-12 mtpx10 sm-mtpx1">
-        <div className="dash1-h rounded-5 b-shadow relative sm-mtpx30">
+        <div className="dash1-h bgwhite rounded-5 b-shadow relative sm-mtpx30">
           <div className="p15 flex justify-end">
             <div>
               <h2 className="fsize29 text-right mtpx1 mbpx1 textprimary">
@@ -35,7 +35,7 @@ const Dashboard1 = () => {
             </div>
           </div>
         </div>
-        <div className="dash1-h rounded-5 b-shadow relative sm-mtpx30">
+        <div className="dash1-h bgwhite rounded-5 b-shadow relative sm-mtpx30">
           <div className="p15 flex justify-end">
             <div>
               <h2 className="fsize29 text-right mtpx1 mbpx1 textsecondary">
@@ -66,7 +66,7 @@ const Dashboard1 = () => {
             </div>
           </div>
         </div>
-        <div className="dash1-h rounded-5 b-shadow relative md-mtpx30 sm-mtpx30">
+        <div className="dash1-h bgwhite rounded-5 b-shadow relative md-mtpx30 sm-mtpx30">
           <div className="p15 flex justify-end">
             <div>
               <h2 className="fsize29 text-right mtpx1 mbpx1 textwarning">
@@ -95,7 +95,7 @@ const Dashboard1 = () => {
             </div>
           </div>
         </div>
-        <div className="dash1-h rounded-5 b-shadow relative md-mtpx30 sm-mtpx30">
+        <div className="dash1-h bgwhite rounded-5 b-shadow relative md-mtpx30 sm-mtpx30">
           <div className="p15 flex justify-end">
             <div>
               <h2 className="fsize29 text-right mtpx1 mbpx1 textsuccess">6</h2>

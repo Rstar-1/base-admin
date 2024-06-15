@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 // Components
 import Sidebar from "./pages/admin/sidebar/Sidebar";
 import Header from "./pages/admin/layouts/header/Header";
@@ -15,8 +15,7 @@ import Seo from "./pages/admin/layouts/components/seo/Seo";
 const  App = () => {
   return (
     <div className="App relative">
-      <Router>
-        <div className="flex bg-e8f2fc h-100 overflow-hidden">
+        <div className="flex bgtertiary h-100 overflow-hidden">
           <div className="w-side md-hidden sm-hidden">
             <Sidebar />
           </div>
@@ -39,7 +38,6 @@ const  App = () => {
             </Routes>
           </div>
         </div>
-      </Router>
     </div>
   );
 }

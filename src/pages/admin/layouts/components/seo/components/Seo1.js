@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Seo1 = () => {
   return (
     <div>
-      <div className="mtpx9 cust-scroll p20 sm-p15 bgwhite rounded-10 sm-rounded-none">
+      <div className="mtpx9 cust-scroll p20 sm-p15 bgcard rounded-10 sm-rounded-none">
         <h4 className="fsize22 md-fsize20 sm-fsize18 textprimary mtpx1 mbpx1">
           SEO
         </h4>
@@ -13,7 +13,7 @@ const Seo1 = () => {
           <div className="w-60">
             <div className="relative">
               <input
-                className="w-full h-input fsize14 rounded-5 plpx10 border-ec"
+                className="w-full bgwhite textgray h-input fsize14 rounded-5 plpx10 border-ec"
                 placeholder="Search"
               />
               <div className="absolute top-0 right-0 mtpx9 mrpx2">

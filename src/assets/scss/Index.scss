@@ -1,54 +1,74 @@
 /* ======================= Start-Color ======================= */
-// $primary: #684df4 !important;
-// $secondary: #c54b8c !important;
-// $tertiary: #080e1c !important;
-// $forth: #2a2732 !important;
-$primary: hsl(196, 25%, 49%) !important;
-$secondary: #7677a5 !important;
-$tertiary: #1f1f1f !important;
-$forth: #0f172a !important;
-$success: #4bb543 !important;
-$warning: #ff5722 !important;
-$danger: red !important;
-$info: #2196f3 !important;
-$white: #fff !important;
-$dark: #000 !important;
-$gray: gray !important;
+// var(--primary): #684df4 !important;
+// var(--secondary): #c54b8c !important;
+// var(--tertiary): #080e1c !important;
+// var(--forth): #2a2732 !important;
+:root {
+--primary: #6610f2 !important;
+--secondary: #c54b8c !important;
+--tertiary: #e8f2fc !important;
+--forth: #0f172a !important;
+--success: #4bb543 !important;
+--warning: #ff5722 !important;
+--danger: red !important;
+--info: #2196f3 !important;
+--white: #fff !important;
+--card: #fff !important;
+--dark: #000 !important;
+--gray: gray !important;
+}
+.dark-mode {
+--primary: #74c2a8 !important;
+--secondary: #9a9bcc !important;
+--tertiary: #171718 !important;
+--forth: #fff !important;
+--success: #4bb543 !important;
+--warning: #ff5722 !important;
+--danger: red !important;
+--info: #2196f3 !important;
+--white: #293643 !important;
+--card: #1e2b34 !important;
+--dark: #ececec !important;
+--gray: #fff !important;
+}
 /* ======================= End-Color ======================= */
 
 /* ======================= Start-Bg-Color ======================= */
 .bgprimary {
-  background: $primary;
+  background: var(--primary);
+}
+.bgcard {
+  background: var(--card);
 }
 .bgsecondary {
-  background: $secondary;
+  background: var(--secondary);
 }
 .bgtertiary {
-  background: $tertiary;
+  background: var(--tertiary);
 }
 .bgforth {
-  background: $forth;
+  background: var(--forth);
 }
 .bgsuccess {
-  background: $success;
+  background: var(--success);
 }
 .bgwarning {
-  background: $warning;
+  background: var(--warning);
 }
 .bgdanger {
-  background: $danger;
+  background: var(--danger);
 }
 .bginfo {
-  background: $info;
+  background: var(--info);
 }
 .bgwhite {
-  background: $white;
+  background: var(--white);
 }
 .bggray {
-  background: $gray;
+  background: var(--gray);
 }
 .bgdark {
-  background: $dark;
+  background: var(--dark);
 }
 .bg-light-primary {
   background: #efeeef4b !important;
@@ -95,9 +115,6 @@ $gray: gray !important;
 .bg-f8faff {
   background: #f8faff !important;
 }
-.bg-000940 {
-  background: #000940 !important;
-}
 .bg-glass {
   background: rgba(255, 255, 255, 0.09);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -121,73 +138,79 @@ $gray: gray !important;
 
 /* ======================= Start-Text-Color ======================= */
 .textprimary {
-  color: $primary;
+  color: var(--primary);
+}
+.textcard {
+  color: var(--card);
 }
 .textsecondary {
-  color: $secondary;
+  color: var(--secondary);
 }
 .texttertiary {
-  color: $tertiary;
+  color: var(--tertiary);
 }
 .textforth {
-  color: $forth;
+  color: var(--forth);
 }
 .textsuccess {
-  color: $success;
+  color: var(--success);
 }
 .textwarning {
-  color: $warning;
+  color: var(--warning);
 }
 .textdanger {
-  color: $danger;
+  color: var(--danger);
 }
 .textinfo {
-  color: $info;
+  color: var(--info);
 }
 .textwhite {
-  color: $white;
+  color: var(--white);
 }
 .textgray {
-  color: $gray;
+  color: var(--gray);
 }
 .textdark {
-  color: $dark;
+  color: var(--dark);
 }
 /* ======================= End-Text-Color ======================= */
 
 /* ======================= Start-Border ======================= */
 .border-primary {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
+}
+.border-card {
+  border: 1px solid var(--card);
 }
 .border-secondary {
-  border: 1px solid $secondary;
+  border: 1px solid var(--secondary);
 }
 .border-tertiary {
-  border: 1px solid $tertiary;
+  border: 1px solid var(--tertiary);
 }
 .border-forth {
-  border: 1px solid $forth;
+  border: 1px solid var(--forth);
 }
 .border-success {
-  border: 1px solid $success;
+  border: 1px solid var(--success);
 }
 .border-warning {
-  border: 1px solid $warning;
+  border: 1px solid var(--warning);
 }
 .border-danger {
-  border: 1px solid $danger;
+  border: 1px solid var(--danger);
 }
 .border-info {
-  border: 1px solid $info;
+  border: 1px solid var(--info);
 }
 .border-white {
-  border: 1px solid $white;
+  border: 1px solid var(--white);
 }
 .border-gray {
-  border: 1px solid $gray;
+  border: 1px solid var(--gray);
 }
 .border-dark {
-  border: 1px solid $dark;
+  border: 1px solid var(--dark);
 }
 /* ======================= End-Border ======================= */
 
@@ -339,10 +362,10 @@ p {
   border-right: none !important;
 }
 .borderprimary {
-  border: 1px solid $primary;
+  border: 1px solid var(--primary);
 }
 .bordersecondary {
-  border: 1px solid $secondary;
+  border: 1px solid var(--secondary);
 }
 .center-absolute {
   top: 50% !important;
@@ -377,8 +400,8 @@ p {
   cursor: pointer;
 }
 .pagination .selected {
-  background: $primary;
-  color: $white;
+  background: var(--primary);
+  color: var(--white);
 }
 /* ======================= End-Pagination ======================= */
 
@@ -386,8 +409,8 @@ p {
 .loader {
   border: 2px solid transparent;
   border-radius: 50%;
-  border-top: 2px solid $tertiary;
-  border-bottom: 2px solid $tertiary;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
@@ -395,8 +418,8 @@ p {
 .loader2 {
   border: 2px solid transparent;
   border-radius: 50%;
-  border-top: 2px solid $tertiary;
-  border-bottom: 2px solid $tertiary;
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
   width: 70px;
   height: 70px;
   animation: spins 2s linear infinite;
@@ -443,10 +466,10 @@ p {
   transform: rotate(20deg) !important;
 }
 .dashboard .CircularProgressbar .CircularProgressbar-path {
-  stroke: $primary;
+  stroke: var(--primary);
 }
 .dashboard .CircularProgressbar .CircularProgressbar-text {
-  fill: $primary;
+  fill: var(--primary);
 }
 .tab input {
   position: absolute;
@@ -498,11 +521,11 @@ p {
   backface-visibility: hidden;
 }
 .flip-card-front {
-  background-color: $forth;
+  background-color: var(--forth);
   border-radius: 5px !important;
 }
 .flip-card-back {
-  background-color: $primary;
+  background-color: var(--primary);
   transform: rotateY(180deg);
   border-radius: 5px !important;
   display: flex !important;
@@ -514,30 +537,30 @@ p {
 /* ======================= Start-Button ======================= */
 .primarybtn {
   background: transparent !important;
-  border: 1px solid $primary;
-  color: $primary;
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
 .primarybtn:hover {
-  background: $primary;
-  color: $white;
+  background: var(--primary);
+  color: var(--white);
 }
 .secondarybtn {
   background: transparent !important;
-  border: 1px solid $secondary;
-  color: $secondary;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
 }
 .secondarybtn:hover {
-  background: $secondary;
-  color: $white;
+  background: var(--secondary);
+  color: var(--white);
 }
 .whitebtn {
   background: transparent !important;
-  border: 1px solid $white;
-  color: $white;
+  border: 1px solid var(--white);
+  color: var(--white);
 }
 .whitebtn:hover {
-  background: $white;
-  color: $primary;
+  background: var(--white);
+  color: var(--primary);
 }
 /* ======================= End-Button ======================= */
 
@@ -576,27 +599,27 @@ p {
 
 // Section 1
 .sidebar1 .activesidebar {
-  color: $gray;
+  color: var(--gray);
 }
 .sidebar1 .active {
-  color: $primary;
+  color: var(--primary);
 }
 // Section 1
 
 // Section 2
 .sidebar2 .activesidebar .icon-circle {
-  color: $primary;
+  color: var(--primary);
   background: #efeeef4b !important;
 }
 .sidebar2 .active .icon-circle {
-  color: $white;
-  background: $primary;
+  color: var(--primary);
+  background: var(--primary);
 }
 .sidebar2 .activesidebar .text-side {
-  color: $gray;
+  color: var(--gray);
 }
 .sidebar2 .active .text-side {
-  color: $primary;
+  color: var(--primary);
 }
 .icon-circle {
   width: 24px !important;
@@ -606,42 +629,42 @@ p {
 
 // Section 3
 .sidebar3 .activesidebar {
-  color: $gray;
+  color: var(--gray);
 }
 .sidebar3 .active {
-  color: $white;
-  background: $primary;
+  color: var(--white);
+  background: var(--primary);
 }
 // Section 3
 
 // Section 4
 .sidebar4 .activesidebar {
-  color: $gray;
+  color: var(--gray);
 }
 .sidebar4 .active {
-  color: $white;
-  background: $primary;
+  color: var(--white);
+  background: var(--primary);
 }
 // Section 4
 
 // Section 5
 .sidebar5 .activesidebar {
-  color: $gray;
+  color: var(--gray);
 }
 .sidebar5 .active {
-  color: $primary;
-  border-left: 4px solid $primary;
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
   background: #efeeef4b !important;
 }
 // Section 5
 
 // Section 6
 .sidebar6 .activesidebar {
-  color: $gray;
+  color: var(--gray);
 }
 .sidebar6 .active {
-  color: $primary;
-  border-left: 4px solid $primary;
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
   border-radius: 8px 0px 0px 8px !important;
   background: #efeeef4b !important;
 }
@@ -693,13 +716,13 @@ td {
   padding: 8px;
 }
 th {
-  background: $primary;
-  border: 1px solid $white;
+  background: var(--primary);
+  border: 1px solid var(--gray);
   text-align: left;
   padding: 10px;
 }
 tr:nth-child(even):hover {
-  background-color: #f8f8fb;
+  background-color: var(--tertiary);
 }
 .h-input {
   height: 35px !important;
@@ -786,16 +809,16 @@ tr:nth-child(even):hover {
   height: 70px !important;
 }
 .primary-border{
-  border-left: 5px solid $primary;
+  border-left: 5px solid var(--primary);
 }
 .secondary-border{
-  border-left: 5px solid $secondary;
+  border-left: 5px solid var(--secondary);
 }
 .warning-border{
-  border-left: 5px solid $warning;
+  border-left: 5px solid var(--warning);
 }
 .success-border{
-  border-left: 5px solid $success;
+  border-left: 5px solid var(--success);
 }
 // Dashboard 2
 
@@ -837,7 +860,7 @@ tr:nth-child(even):hover {
 // Dashboard 6
 .dash7-h {
   height: 150px !important;
-  border-bottom: 4px solid $primary;
+  border-bottom: 4px solid var(--primary);
 }
 .map-img{
   width: 100px !important;
