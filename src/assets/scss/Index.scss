@@ -682,6 +682,28 @@ p {
     height: 50px !important;
   }
 }
+.bg-glass-nav {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  @media (max-width: 860px) and (min-width: 641px) {
+    background: transparent !important;
+    backdrop-filter: none !important;
+  }
+}
+.header .navhide {
+  position: absolute;
+  right: -50%;
+  width: 50% !important;
+  transition: all 0.3s ease-in 0s;
+}
+.header .navview {
+  position: absolute;
+  right: 0%;
+  width: 100% !important;
+  transition: all 0.3s ease-in 0s;
+}
 
 // Header 1
 .border-h1 {
