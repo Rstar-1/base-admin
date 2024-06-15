@@ -21,7 +21,7 @@ const Header1 = () => {
     dispatch(toggleDarkMode());
   };
   return (
-    <div className="bgcard border-h1 header flex justify-between items-center px16 py10 md-py6 sm-py6 md-px8 sm-px8">
+    <div className="bgcard border-h1 drawer flex justify-between items-center px16 py10 md-py6 sm-py6 md-px8 sm-px8">
       <div
         className={
           sidebarshow === true
@@ -29,7 +29,7 @@ const Header1 = () => {
             : "bg-glass-nav fixed top-0 hidden h-100 md-block sm-block z-99 navhide"
         }
       >
-         <div className="bgwhite w-90 md-w-40 h-100 absolute right-0 top-0">
+        <div className="bgwhite w-90 md-w-40 h-100 absolute right-0 top-0">
           <div className="bgprimary p10">
             <div className="flex items-center justify-between gap-4 plpx10 prpx10">
               <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
@@ -43,7 +43,7 @@ const Header1 = () => {
               />
             </div>
           </div>
-        <Sidebars />
+          <Sidebars />
         </div>
       </div>
       <div className="flex items-center gap-10">

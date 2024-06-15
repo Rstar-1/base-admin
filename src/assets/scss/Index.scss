@@ -77,13 +77,13 @@
   background: #faf1f1 !important;
 }
 .bg-light-success {
-  background: rgb(232, 243, 232) !important;
+  background: #4bb5432e !important;
 }
 .bg-light-warning {
   background: #faf0ed !important;
 }
 .bg-light-danger {
-  background: rgb(251, 243, 243) !important;
+  background: rgba(255, 0, 0, 0.144) !important;
 }
 .bg-ec {
   background-color: #ececec !important;
@@ -532,6 +532,24 @@ p {
   align-items: center !important;
   justify-content: center !important;
 }
+.bg-glass-nav {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.drawer .navhide {
+  position: absolute;
+  right: -50%;
+  width: 50% !important;
+  transition: all 0.3s ease-in 0s;
+}
+.drawer .navview {
+  position: absolute;
+  right: 0%;
+  width: 100% !important;
+  transition: all 0.3s ease-in 0s;
+}
 /* ======================= End-Animatedcss ======================= */
 
 /* ======================= Start-Button ======================= */
@@ -681,28 +699,6 @@ p {
     width: 50px !important;
     height: 50px !important;
   }
-}
-.bg-glass-nav {
-  background: rgba(255, 255, 255, 0.09);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.2px);
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  @media (max-width: 860px) and (min-width: 641px) {
-    background: transparent !important;
-    backdrop-filter: none !important;
-  }
-}
-.header .navhide {
-  position: absolute;
-  right: -50%;
-  width: 50% !important;
-  transition: all 0.3s ease-in 0s;
-}
-.header .navview {
-  position: absolute;
-  right: 0%;
-  width: 100% !important;
-  transition: all 0.3s ease-in 0s;
 }
 
 // Header 1

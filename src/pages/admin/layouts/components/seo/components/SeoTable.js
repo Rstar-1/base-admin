@@ -1,10 +1,62 @@
-import React from 'react';
-import FeatherIcon from 'feather-icons-react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import FeatherIcon from "feather-icons-react";
+import AddSeo from "./add/AddSeo";
+import EditSeo from "./edit/EditSeo";
 
-const Seo1 = () => {
+const SeoTable = () => {
+  const [addshow, setaddshow] = useState(false);
+  const [editshow, seteditshow] = useState(false);
   return (
-    <div>
+    <div className="drawer">
+      <div
+        className={
+          addshow === true
+            ? "bg-glass-nav b-shadow fixed top-0 h-100 z-99 overflow-hidden navview"
+            : "bg-glass-nav b-shadow fixed top-0 h-100 z-99 overflow-hidden navhide"
+        }
+      >
+        <div className="bgwhite w-30 md-w-40 sm-w-90 h-100 absolute right-0 top-0">
+          <div className="bgprimary p10">
+            <div className="flex items-center justify-between gap-4 plpx10 prpx10">
+              <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
+                Add Seo
+              </p>
+              <FeatherIcon
+                icon="x"
+                className="textwhite cursor-pointer"
+                size={17}
+                onClick={() => setaddshow(false)}
+              />
+            </div>
+          </div>
+          <AddSeo />
+        </div>
+      </div>
+      <div
+        className={
+          editshow === true
+            ? "bg-glass-nav b-shadow fixed top-0 h-100 z-99 overflow-hidden navview"
+            : "bg-glass-nav b-shadow fixed top-0 h-100 z-99 overflow-hidden navhide"
+        }
+      >
+        <div className="bgwhite w-30 md-w-40 sm-w-90 h-100 absolute right-0 top-0">
+          <div className="bgprimary p10">
+            <div className="flex items-center justify-between gap-4 plpx10 prpx10">
+              <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
+                Edit Seo
+              </p>
+              <FeatherIcon
+                icon="x"
+                className="textwhite cursor-pointer"
+                size={17}
+                onClick={() => seteditshow(false)}
+              />
+            </div>
+          </div>
+          <EditSeo />
+        </div>
+      </div>
       <div className="mtpx9 cust-scroll p20 sm-p15 bgcard rounded-10 sm-rounded-none">
         <h4 className="fsize22 md-fsize20 sm-fsize18 textprimary mtpx1 mbpx1">
           SEO
@@ -26,7 +78,10 @@ const Seo1 = () => {
             </div>
           </div>
           <div className="w-40 flex justify-end">
-            <button className="border-0 cursor-pointer font-500 textwhite rounded-5 ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 bgprimary">
+            <button
+              onClick={() => setaddshow(true)}
+              className="border-0 cursor-pointer font-500 textwhite rounded-5 ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 bgprimary"
+            >
               Add
             </button>
           </div>
@@ -80,21 +135,25 @@ const Seo1 = () => {
                     <p>metadescription</p>
                   </td>
                   <td className="fsize13 textforth w-10 font-300 table-collg">
-                    <p>Publish</p>
+                    <p>12/12/2002</p>
                   </td>
                   <td className="fsize13 textforth w-10 font-300 table-collg">
-                    <p>Publish</p>
+                    <button className="border-0 cursor-pointer font-400 textsuccess rounded-20 fsize12 px12 py4 bg-light-success">
+                      Publish
+                    </button>
+                    {/* <button className="border-0 cursor-pointer font-400 textdanger rounded-20 fsize12 px12 py4 bg-light-danger">
+                      Unpublish
+                    </button> */}
                   </td>
                   <td className="fsize13 w-10 textforth table-colsm">
-                    <NavLink>
-                      <FeatherIcon
-                        icon="edit"
-                        className="textsecondary mx3 cursor-pointer"
-                        size={16}
-                      />
-                    </NavLink>
                     <FeatherIcon
-                      icon="trash"
+                      onClick={() => seteditshow(true)}
+                      icon="edit"
+                      className="textsecondary mx3 cursor-pointer"
+                      size={16}
+                    />
+                    <FeatherIcon
+                      icon="trash-2"
                       className="textdanger cursor-pointer"
                       size={16}
                     />
@@ -117,10 +176,15 @@ const Seo1 = () => {
                     <p>metadescription</p>
                   </td>
                   <td className="fsize13 textforth w-10 font-300 table-collg">
-                    <p>Publish</p>
+                    <p>12/12/2002</p>
                   </td>
                   <td className="fsize13 textforth w-10 font-300 table-collg">
-                    <p>Publish</p>
+                    {/* <button className="border-0 cursor-pointer font-400 textsuccess rounded-20 fsize12 px12 py4 bg-light-success">
+                      Publish
+                    </button> */}
+                    <button className="border-0 cursor-pointer font-400 textdanger rounded-20 fsize12 px12 py4 bg-light-danger">
+                      Unpublish
+                    </button>
                   </td>
                   <td className="fsize13 w-10 textforth table-colsm">
                     <NavLink>
@@ -131,7 +195,7 @@ const Seo1 = () => {
                       />
                     </NavLink>
                     <FeatherIcon
-                      icon="trash"
+                      icon="trash-2"
                       className="textdanger cursor-pointer"
                       size={16}
                     />
@@ -144,6 +208,6 @@ const Seo1 = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Seo1
+export default SeoTable;

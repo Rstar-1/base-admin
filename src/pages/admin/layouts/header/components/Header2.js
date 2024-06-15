@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import FeatherIcon from "feather-icons-react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDarkMode } from "../../../../../redux/colorredux/ColorSlice";
+import Sidebars from "../../../sidebar/components/Sidebar4";
 
 const Header2 = () => {
+  const [sidebarshow, setsidebarshow] = useState(false);
   const darkMode = useSelector((state) => state.theme.darkMode);
   const dispatch = useDispatch();
 
@@ -19,7 +21,31 @@ const Header2 = () => {
     dispatch(toggleDarkMode());
   };
   return (
-    <div className="bgcard border-h2 flex justify-between items-center px16 py10 md-py6 sm-py6 md-px6 sm-px8">
+    <div className="bgcard drawer border-h2 flex justify-between items-center px16 py10 md-py6 sm-py6 md-px6 sm-px8">
+      <div
+        className={
+          sidebarshow === true
+            ? "bg-glass-nav fixed top-0 hidden h-100 md-block sm-block z-99 navview"
+            : "bg-glass-nav fixed top-0 hidden h-100 md-block sm-block z-99 navhide"
+        }
+      >
+        <div className="bgwhite w-90 md-w-40 h-100 absolute right-0 top-0">
+          <div className="bgprimary p10">
+            <div className="flex items-center justify-between gap-4 plpx10 prpx10">
+              <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
+                RS Developers
+              </p>
+              <FeatherIcon
+                icon="x"
+                className="textwhite cursor-pointer"
+                size={17}
+                onClick={() => setsidebarshow(false)}
+              />
+            </div>
+          </div>
+          <Sidebars />
+        </div>
+      </div>
       <div className="flex items-center gap-10">
         <img
           src="https://api-dev-minimal-v6.vercel.app/assets/images/avatar/avatar-2.webp"

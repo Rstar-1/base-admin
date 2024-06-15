@@ -1,12 +1,12 @@
 import React from 'react'
-import Seos from './components/Seo1'
+import SeoTable from './components/SeoTable'
 
 const Seo = () => {
   return (
     <div>
-      <Seos />
+      <SeoTable />
     </div>
   )
 }
 
-export default Seo
+export default Seo;

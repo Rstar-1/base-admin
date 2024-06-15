@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const EditSeo = () => {
+const AddSeo = () => {
   return (
     <div className="p20">
       <div className="">
@@ -40,12 +40,14 @@ const EditSeo = () => {
         </div>
       </div>
       <div className="mtpx15 w-30 flex fixed bottom-0 right-0 justify-center">
-        <button className="border-0 cursor-pointer w-full font-500 textwhite ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 bgprimary">
+        <button
+          className="border-0 cursor-pointer w-full font-500 textwhite ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 bgprimary"
+        >
           Submit
         </button>
       </div>
     </div>
   );
-};
+}
 
-export default EditSeo;
+export default AddSeo
