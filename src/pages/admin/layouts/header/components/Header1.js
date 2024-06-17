@@ -88,13 +88,6 @@ const Header1 = () => {
           className="textgray hidden md-hidden sm-block cursor-pointer"
           size={16}
         />
-        <button className="border-0 sm-hidden cursor-pointer font-500 rounded-5 p10 bgprimary">
-          <FeatherIcon
-            icon="user"
-            className={darkMode ? "textdark flex" : "textwhite flex"}
-            size={16}
-          />
-        </button>
         <button className="border-0 sm-hidden cursor-pointer font-500 rounded-5 p10 bgsecondary">
           <FeatherIcon
             icon="settings"

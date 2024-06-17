@@ -4,32 +4,32 @@
 // var(--tertiary): #080e1c !important;
 // var(--forth): #2a2732 !important;
 :root {
---primary: #6610f2 !important;
---secondary: #c54b8c !important;
---tertiary: #e8f2fc !important;
---forth: #0f172a !important;
---success: #4bb543 !important;
---warning: #ff5722 !important;
---danger: red !important;
---info: #2196f3 !important;
---white: #fff !important;
---card: #fff !important;
---dark: #000 !important;
---gray: gray !important;
+  --primary: #6610f2 !important;
+  --secondary: #c54b8c !important;
+  --tertiary: #e8f2fc !important;
+  --forth: #0f172a !important;
+  --success: #4bb543 !important;
+  --warning: #ff5722 !important;
+  --danger: red !important;
+  --info: #2196f3 !important;
+  --white: #fff !important;
+  --card: #fff !important;
+  --dark: #000 !important;
+  --gray: gray !important;
 }
 .dark-mode {
---primary: #74c2a8 !important;
---secondary: #9a9bcc !important;
---tertiary: #171718 !important;
---forth: #fff !important;
---success: #4bb543 !important;
---warning: #ff5722 !important;
---danger: red !important;
---info: #2196f3 !important;
---white: #293643 !important;
---card: #1e2b34 !important;
---dark: #ececec !important;
---gray: #fff !important;
+  --primary: #74c2a8 !important;
+  --secondary: #9a9bcc !important;
+  --tertiary: #171718 !important;
+  --forth: #fff !important;
+  --success: #4bb543 !important;
+  --warning: #ff5722 !important;
+  --danger: red !important;
+  --info: #2196f3 !important;
+  --white: #293643 !important;
+  --card: #1e2b34 !important;
+  --dark: #ececec !important;
+  --gray: #fff !important;
 }
 /* ======================= End-Color ======================= */
 
@@ -331,8 +331,16 @@ p {
   list-style: disc !important;
 }
 .dot {
-  width: 18px !important;
-  height: 18px !important;
+  width: 12px !important;
+  height: 12px !important;
+  @media (max-width: 912px) and (min-width: 641px) {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  @media (max-width: 640px) {
+    width: 8px !important;
+    height: 8px !important;
+  }
 }
 .border-0 {
   border: none !important;
@@ -377,6 +385,9 @@ p {
 }
 .b-shadow {
   box-shadow: 0px 9px 50px #1211271f !important;
+}
+.leading {
+  line-height: 15px !important;
 }
 /* ======================= End-Maincss ======================= */
 
@@ -776,20 +787,25 @@ tr:nth-child(even):hover {
   width: 350px !important;
   height: 350px !important;
 }
-.table-colsm{
-  @media (max-width:912px) {
+.table-colsm {
+  @media (max-width: 912px) {
     min-width: 50px !important;
   }
 }
-.table-collg{
-  @media (max-width:912px) {
+.table-collg {
+  @media (max-width: 912px) {
     min-width: 150px !important;
   }
 }
-.table-w{
-  @media (max-width:912px) {
+.table-w {
+  @media (max-width: 912px) {
     width: 100% !important;
     overflow: auto !important;
+  }
+}
+.sm-border-none {
+  @media (max-width: 640px) {
+    border: none !important;
   }
 }
 /* ======================= End-Table ======================= */
@@ -806,10 +822,10 @@ tr:nth-child(even):hover {
 .dash1-h {
   height: 140px !important;
 }
-.bordt{
+.bordt {
   border-top: 1px solid #ececec !important;
 }
-.dash1-minus{
+.dash1-minus {
   margin-top: -7% !important;
 }
 .dash1-social {
@@ -826,16 +842,16 @@ tr:nth-child(even):hover {
   width: 70px !important;
   height: 70px !important;
 }
-.primary-border{
+.primary-border {
   border-left: 5px solid var(--primary);
 }
-.secondary-border{
+.secondary-border {
   border-left: 5px solid var(--secondary);
 }
-.warning-border{
+.warning-border {
   border-left: 5px solid var(--warning);
 }
-.success-border{
+.success-border {
   border-left: 5px solid var(--success);
 }
 // Dashboard 2
@@ -844,14 +860,14 @@ tr:nth-child(even):hover {
 .dash3-h {
   height: 140px !important;
 }
-.circle1{
+.circle1 {
   width: 120px !important;
   height: 120px !important;
   border-radius: 50% !important;
   margin-top: -35% !important;
   margin-left: 10% !important;
 }
-.circle2{
+.circle2 {
   width: 120px !important;
   height: 120px !important;
   border-radius: 50% !important;
@@ -880,10 +896,57 @@ tr:nth-child(even):hover {
   height: 150px !important;
   border-bottom: 4px solid var(--primary);
 }
-.map-img{
+.map-img {
   width: 100px !important;
   height: 100px !important;
 }
 // Dashboard 6
 
 /* ======================= End-dashboard ======================= */
+
+/* ======================= Start-Management ======================= */
+
+.management-img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+// Management 1
+.management1-scroll {
+  height: 68vh !important;
+  overflow-y: auto !important;
+}
+// Management 1
+
+/* ======================= End-Management ======================= */
+
+/* ======================= Start-CMS ======================= */
+
+.tab-primary {
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: -1px !important;
+}
+.cms-img {
+  width: 100% !important;
+  height: 60px !important;
+  @media (max-width:640px) {
+  height: 40px !important;
+  }
+}
+
+/* ======================= End-CMS ======================= */
+
+/* ======================= Start-Billing ======================= */
+
+.billing-img {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+/* ======================= End-Billing ======================= */
+
+/* ======================= Start-HowItWorks ======================= */
+
+
+
+/* ======================= End-HowItWorks ======================= */
