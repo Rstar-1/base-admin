@@ -14,6 +14,7 @@ import Seo from "./pages/admin/layouts/components/seo/Seo";
 import Management from "./pages/admin/layouts/components/management/Management";
 import Cms from "./pages/admin/layouts/components/cms/Cms";
 import Billing from "./pages/admin/layouts/components/billing/Billing";
+import Settings from "./pages/admin/layouts/components/settings/Settings";
 
 const App = () => {
   const location = useLocation();
@@ -49,6 +50,7 @@ const App = () => {
             <Route path="/cms" element={<Cms />} />
             <Route path="/billing" element={<Billing />} />
             <Route path="/seo" element={<Seo />} />
+            <Route path="/automation" element={<Settings />} />
             {/* ======================= End-Pages ======================= */}
             {/* ======================= Start-Error ======================= */}
             <Route path="*" element={<Error />} />

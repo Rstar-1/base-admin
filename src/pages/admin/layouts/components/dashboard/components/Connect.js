@@ -23,7 +23,7 @@ const Connect = () => {
             </div>
           </div>
         </div>
-        <div className="border-ec rounded-10 p16 sm-p8 sm-rounded-5 mtpx20 md-mtpx16 sm-mtpx14">
+        <div className="border-ec sm-border-none rounded-10 p16 sm-p1 sm-rounded-5 mtpx20 md-mtpx16 sm-mtpx14">
           <div className="table-w">
             <table className="w-full">
               <thead>

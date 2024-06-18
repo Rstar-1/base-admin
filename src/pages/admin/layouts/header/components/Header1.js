@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FeatherIcon from "feather-icons-react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDarkMode } from "../../../../../redux/colorredux/ColorSlice";
-import Sidebars from "../../../sidebar/components/Sidebar4";
+import MobileSidebar from "../../../sidebar/components/MobileSidebar";
 
 const Header1 = () => {
   const [sidebarshow, setsidebarshow] = useState(false);
@@ -43,7 +43,7 @@ const Header1 = () => {
               />
             </div>
           </div>
-          <Sidebars />
+          <MobileSidebar />
         </div>
       </div>
       <div className="flex items-center gap-10">
@@ -66,27 +66,27 @@ const Header1 = () => {
           onClick={() => setsidebarshow(true)}
           icon="align-left"
           className="textgray hidden md-block sm-block cursor-pointer"
-          size={16}
+          size={18}
         />
         <FeatherIcon
           className="textgray hidden md-block sm-block cursor-pointer"
-          size={16}
+          size={18}
         />
         <FeatherIcon
           icon="settings"
           className="textgray hidden md-block sm-block cursor-pointer"
-          size={16}
+          size={18}
         />
         <FeatherIcon
           onClick={handleToggle}
           icon={darkMode ? "moon" : "sun"}
           className="textgray hidden md-block sm-block cursor-pointer"
-          size={16}
+          size={18}
         />
         <FeatherIcon
           icon="log-out"
           className="textgray hidden md-hidden sm-block cursor-pointer"
-          size={16}
+          size={18}
         />
         <button className="border-0 sm-hidden cursor-pointer font-500 rounded-5 p10 bgsecondary">
           <FeatherIcon

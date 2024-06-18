@@ -4,7 +4,10 @@ import FeatherIcon from "feather-icons-react";
 import logo from "../../../../assets/logo.png";
 import sidebarmenu from "./NavData";
 
-const Sidebar4 = () => {
+const MobileSidebar = () => {
+    const refreshPage = () => {
+      window.location.reload();
+    }
 
   return (
     <div className="bgcard h-100 overflow-auto relative sidebar4">
@@ -54,6 +57,7 @@ const Sidebar4 = () => {
                                   activeClassName="active"
                                   className="flex items-center activesidebar py7 px10 rounded-5 gap-9"
                                   to={drop.route}
+                                  onClick={() => refreshPage()}
                                 >
                                   <FeatherIcon
                                     icon={drop.icon}
@@ -76,6 +80,7 @@ const Sidebar4 = () => {
                         activeClassName="active"
                         className="flex items-center rounded-5 activesidebar px12 py8 gap-9"
                         to={e.route}
+                        onClick={() => refreshPage()}
                       >
                         <FeatherIcon
                           icon={e.icon}
@@ -98,4 +103,4 @@ const Sidebar4 = () => {
   );
 };
 
-export default Sidebar4;
+export default MobileSidebar;

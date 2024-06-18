@@ -39,9 +39,9 @@ const AddSeo = () => {
           ></textarea>
         </div>
       </div>
-      <div className="mtpx15 w-30 flex fixed bottom-0 right-0 justify-center">
+      <div className="mtpx15 flex justify-center">
         <button
-          className="border-0 cursor-pointer w-full font-500 textwhite ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 bgprimary"
+          className="border-0 cursor-pointer w-full font-500 textwhite ptpx10 pbpx10 md-ptpx6 md-pbpx6 md-plpx16 md-prpx16 sm-ptpx8 sm-pbpx8 sm-plpx16 sm-prpx16 plpx25 prpx25 fsize14 rounded-5 bgprimary"
         >
           Submit
         </button>
